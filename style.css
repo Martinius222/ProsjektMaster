@@ -1,0 +1,101 @@
+
+#workspace {
+width: 82%;
+height: 30em;
+
+}
+
+
+#row2 {
+position: relative;
+top: -2.9em;
+left: 4.8em;
+
+}
+
+#row3 {
+position: relative;
+top: -5.8em;
+
+}
+
+#row4 {
+position: relative;
+top: -8.7em;
+left: 4.8em;
+
+}
+
+#row5 {
+position: relative;
+top: -11.6em;
+
+}
+
+#row6 {
+position: relative;
+top: -14.5em;
+left: 4.8em;
+
+}
+
+
+
+.cont {
+	position: relative;
+	top: 2em;
+	display: inline-block;
+	width:11%;
+	height: 11em;
+	/*background-color: black;*/
+	background-color: rgba(red, green, blue, alpha);
+	opacity: 1;
+	border-radius: 8px;
+	/*opacity: 0.5;*/
+}
+
+/*.cont > .box {
+	
+	position: inherit;
+	width: 100%;
+	height: 30px;
+	background-color: blue;
+	border-radius: 8px;
+	border: solid 2px lightblue;
+	transition: opacity 0.2s ease-in-out;
+	cursor: grab;
+}*/
+
+.cont > .hexagon {
+  position: relative;
+  width: 150px; 
+  height: 86.60px;
+  background-color: #ebc645;
+  margin: 43.30px 0;
+  cursor: grab;
+  
+  
+}
+
+.cont > .hexagon:before,
+.cont > .hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  cursor: grab;
+}
+
+.cont > .hexagon:before {
+  bottom: 100%;
+  border-bottom: 43.30px solid #ebc645;
+  cursor: grab;
+}
+
+.cont > .hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 43.30px solid #ebc645;
+  cursor: grab;
+}
