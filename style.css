@@ -30,12 +30,44 @@ nav {
 }
 
 #generator {
-	display: block;
+	display: flex;
+	justify-content: center;
+	
 	width: 95%;
 	height: 12em;
 	border-radius: 8px;
 	margin: 1em auto 0 auto; 
-	background-color: #ffffff; 
+	background-color: #ffffff;
+	z-index: 9; 
+}
+
+#generatorOptions {
+	display: flex;
+	justify-content: center;
+	width: 17%;
+	height: 100%;
+
+}
+
+#generatorField {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 83%;
+	height: 100%;
+
+}
+
+#newCombBtn {
+	margin-top: .5em;
+	display: inline-block;
+	position: static;
+	top: -5em;
+	left: -8em;
+	width: 35px;
+	height: 37px;
+	border-radius: 50%;
+	background-color: #ebc645;
 }
 
 #sidebar {
@@ -63,7 +95,7 @@ float: left;
 #row2 {
 position: relative;
 top: -2.9em;
-left: 4.8em;
+left: 4.85em;
 
 }
 
@@ -76,7 +108,7 @@ top: -5.8em;
 #row4 {
 position: relative;
 top: -8.7em;
-left: 4.8em;
+left: 4.85em;
 
 }
 
@@ -89,7 +121,7 @@ top: -11.6em;
 #row6 {
 position: relative;
 top: -14.5em;
-left: 4.8em;
+left: 4.85em;
 
 }
 
@@ -127,6 +159,7 @@ left: 4.8em;
   background-color: #ebc645;
   margin: 43.30px 0;
   cursor: grab;
+  z-index: 10;
   
   
 }
@@ -139,12 +172,14 @@ left: 4.8em;
   border-left: 75px solid transparent;
   border-right: 75px solid transparent;
   cursor: grab;
+  z-index: 10;
 }
 
 .cont > .hexagon:before {
   bottom: 100%;
   border-bottom: 43.30px solid #ebc645;
   cursor: grab;
+  z-index: 10;
 }
 
 .cont > .hexagon:after {
@@ -152,4 +187,45 @@ left: 4.8em;
   width: 0;
   border-top: 43.30px solid #ebc645;
   cursor: grab;
+  z-index: 10;
+}
+
+/*Styling for generated hexagon inside generator div*/
+
+#generatorField > .hexagon {
+  position: relative;
+  width: 150px; 
+  height: 86.60px;
+  background-color: #ebc645;
+  margin: 43.30px 0;
+  cursor: grab;
+  z-index: 10;
+  
+  
+}
+
+#generatorField > .hexagon:before,
+#generatorField > .hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  cursor: grab;
+  z-index: 10;
+}
+
+#generatorField > .hexagon:before {
+  bottom: 100%;
+  border-bottom: 43.30px solid #ebc645;
+  cursor: grab;
+  z-index: 10;
+}
+
+#generatorField > .hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 43.30px solid #ebc645;
+  cursor: grab;
+  z-index: 10;
 }
