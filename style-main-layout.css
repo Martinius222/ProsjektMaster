@@ -1,0 +1,105 @@
+/* Fill whole screen */
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+/* Small scalable logo */
+img {
+    width: 6em;
+    border-radius: 2em;
+    margin: 0.1em;
+}
+
+.linktext {
+    margin: 0.1em;
+    padding: 0.4em;
+    border-radius: 2em;
+    background-color: rgb(127, 179, 209);
+    color: rgb(255, 255, 255);
+}
+
+.linktext:hover {
+    background-color: rgb(0, 85, 125);
+}
+
+/* Indicate that this is clickable */
+.clickable {
+    cursor: pointer;
+}
+
+.kanban-container {
+    max-height: 97%;
+    border-radius: 1em;
+    margin-top: 0.3em;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    background-color: rgb(223, 225 ,230);
+    overflow: auto;
+}
+
+/* Scalable main container filling screen */
+#main {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+#topbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(0, 103, 163);
+}
+
+#status {
+    border: 0.1em solid black;
+}
+
+/* Fills rest of screen */
+#workarea {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+#combarea {
+    float: left;
+    background-color: rgb(255, 153, 0);
+}
+
+#sidebar {
+    float: right;
+    display: flex;
+    flex: 1 1 auto;
+    background-color: rgb(0, 121, 191);
+}
+
+#sidebar * {
+    text-align: center;
+}
+
+#todo-container {
+    display: inline-block;
+    width: 80%;
+}
+
+#doing-container {
+    display: none;
+    width: 33.3%;
+}
+
+#done-container {
+    display: none;
+    width: 33.3%;
+}
+
+#size {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 103, 163);
+}
