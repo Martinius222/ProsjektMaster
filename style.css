@@ -32,7 +32,6 @@ nav {
 #generator {
 	display: flex;
 	justify-content: center;
-	
 	width: 95%;
 	height: 12em;
 	border-radius: 8px;
@@ -68,6 +67,7 @@ nav {
 	height: 37px;
 	border-radius: 50%;
 	background-color: #ebc645;
+	z-index: 10;
 }
 
 #sidebar {
@@ -94,34 +94,34 @@ float: left;
 
 #row2 {
 position: relative;
-top: -2.9em;
-left: 4.85em;
+top: -3.8em;
+left: 4.3em;
 
 }
 
 #row3 {
 position: relative;
-top: -5.8em;
+top: -7.6em;
 
 }
 
 #row4 {
 position: relative;
-top: -8.7em;
-left: 4.85em;
+top: -11.4em;
+left: 4.3em;
 
 }
 
 #row5 {
 position: relative;
-top: -11.6em;
+top: -15.2em;
 
 }
 
 #row6 {
 position: relative;
-top: -14.5em;
-left: 4.85em;
+top: -19em;
+left: 4.3em;
 
 }
 
@@ -152,12 +152,40 @@ left: 4.85em;
 	cursor: grab;
 }*/
 
+/*.hexagon {
+  position: relative;
+  width: 133.77px; 
+  height: 77.23px;
+  background-color: #64C7CC;
+  margin: 38.62px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 66.885px solid transparent;
+  border-right: 66.885px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 38.62px solid #64C7CC;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 38.62px solid #64C7CC;
+}*/
+
 .cont > .hexagon {
   position: relative;
-  width: 150px; 
-  height: 86.60px;
+  width: 133.77px; 
+  height: 77.23px;
   background-color: #ebc645;
-  margin: 43.30px 0;
+  margin: 38.62px 0;
   cursor: grab;
   z-index: 10;
   
@@ -169,15 +197,15 @@ left: 4.85em;
   content: "";
   position: absolute;
   width: 0;
-  border-left: 75px solid transparent;
-  border-right: 75px solid transparent;
+  border-left: 66.885px solid transparent;
+  border-right: 66.885px solid transparent;
   cursor: grab;
   z-index: 10;
 }
 
 .cont > .hexagon:before {
   bottom: 100%;
-  border-bottom: 43.30px solid #ebc645;
+  border-bottom: 38.62px solid #ebc645;
   cursor: grab;
   z-index: 10;
 }
@@ -185,9 +213,29 @@ left: 4.85em;
 .cont > .hexagon:after {
   top: 100%;
   width: 0;
-  border-top: 43.30px solid #ebc645;
+  border-top: 38.62px solid #ebc645;
   cursor: grab;
   z-index: 10;
+}
+
+.cont > .hexagon > #likebtn {
+	border-radius: 50%;
+	left: 7em;
+	display: inline-block;
+	position: relative;
+	width: 2em;
+	height: 2em;
+	
+}
+
+.cont > .hexagon > #deletebtn {
+	border-radius: 50%;
+	left: 1em;
+	display: inline-block;
+	position: relative;
+	width: 2em;
+	height: 2em;
+
 }
 
 /*Styling for generated hexagon inside generator div*/
