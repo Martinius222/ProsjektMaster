@@ -28,6 +28,7 @@ nav {
 	border-radius: 8px;
 	margin: 1em auto 0 auto; 
 	background-color: #1f1f1f; 
+	overflow: auto;
 }
 
 #generator {
@@ -70,6 +71,7 @@ nav {
 	background-color: #3b3a3a;
 	z-index: 10;
 	border-width: 0px;
+	outline: none;
 }
 
 #sidebar {
@@ -284,12 +286,13 @@ left: 4.3em;
 
 #generatorField > .hexagon {
   position: relative;
-  width: 150px; 
-  height: 86.60px;
+  width: 133.77px; 
+  height: 77.23px;
   background-color: #3b3a3a;
-  margin: 43.30px 0;
+  margin: 38.62px 0;
   cursor: grab;
   z-index: 10;
+  transition: opacity 0.2s ease-in-out;
   
   
 }
@@ -299,23 +302,131 @@ left: 4.3em;
   content: "";
   position: absolute;
   width: 0;
-  border-left: 75px solid transparent;
-  border-right: 75px solid transparent;
+  border-left: 66.885px solid transparent;
+  border-right: 66.885px solid transparent;
   cursor: grab;
   z-index: 10;
+  transition: opacity 0.2s ease-in-out;
 }
 
 #generatorField > .hexagon:before {
   bottom: 100%;
-  border-bottom: 43.30px solid #3b3a3a;
+  border-bottom: 38.62px solid #3b3a3a;
   cursor: grab;
   z-index: 10;
+  transition: opacity 0.2s ease-in-out;
 }
 
 #generatorField > .hexagon:after {
   top: 100%;
   width: 0;
-  border-top: 43.30px solid #3b3a3a;
+  border-top: 38.62px solid #3b3a3a;
   cursor: grab;
   z-index: 10;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/*Styling for hexagons put in the to do list*/
+
+#listField > .hexagon {
+
+  position: relative;
+  width: 95%; 
+  height: 5em;
+  background-color: #383737;
+  margin: 0.5em auto;
+  border-radius: 8px;
+  border: 2px solid #845c00;
+  cursor: grab;
+  z-index: 10;
+  transition: opacity 0.2s ease-in-out;
+  
+  
+}
+
+#listField > .hexagon:before,
+#listField > .hexagon:after {
+  display: hidden;
+  cursor: grab;
+  z-index: 10;
+}
+
+#listField > .hexagon:before {
+  display: hidden;
+  cursor: grab;
+  z-index: 10;
+}
+
+#listField > .hexagon:after {
+  display: hidden;
+  cursor: grab;
+  z-index: 10;
+
+}
+
+/*Properties for the buttons inside TO DO field*/
+
+#listField #likebtn {
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	margin-top: 0.5em;
+	width: 1.5em;
+	height: 1.5em;
+	border: 0px solid #ebc645;
+	cursor: pointer;
+	
+}
+
+#listField #deletebtn {
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	margin-top: 0.5em;
+	width: 1.5em;
+	height: 1.5em;
+	border: 0px solid #ebc645;
+	cursor: pointer;
+
+}
+#listField .input {
+	color: #969696;
+	width: 97%;
+	display: block;
+	position: absolute;
+	top: 3em;
+	text-align: center;
+	background-color: #3b3a3a;
+	border: 0px solid #3b3a3a;
+
+}
+
+#listField #comment {
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	margin-top: 0.5em;
+	top: 0em;
+	width: 1.5em;
+	height: 1.5em;
+	border: 0px solid #ebc645;
+	z-index: 11;
+	cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px lightgrey; 
+  border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 10px;
 }
