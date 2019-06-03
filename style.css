@@ -188,6 +188,7 @@ left: 4.3em;
   margin: 38.62px 0;
   cursor: grab;
   z-index: 10;
+  transition: opacity 0.4 ease-in-out;
   
   
 }
@@ -201,6 +202,7 @@ left: 4.3em;
   border-right: 66.885px solid transparent;
   cursor: grab;
   z-index: 10;
+  transition: opacity 0.9 ease-in-out;
 }
 
 .cont > .hexagon:before {
@@ -208,6 +210,7 @@ left: 4.3em;
   border-bottom: 38.62px solid #ebc645;
   cursor: grab;
   z-index: 10;
+  transition: opacity 0.4 ease-in-out;
 }
 
 .cont > .hexagon:after {
@@ -216,26 +219,39 @@ left: 4.3em;
   border-top: 38.62px solid #ebc645;
   cursor: grab;
   z-index: 10;
+  transition: opacity 0.4 ease-in-out;
 }
 
-.cont > .hexagon > #likebtn {
+#likebtn {
 	border-radius: 50%;
-	left: 7em;
+	left: 8em;
 	display: inline-block;
-	position: relative;
-	width: 2em;
-	height: 2em;
+	position: absolute;
+	width: 1.5em;
+	height: 1.5em;
+	border: 0px solid #ebc645;
 	
 }
 
-.cont > .hexagon > #deletebtn {
+#deletebtn {
 	border-radius: 50%;
-	left: 1em;
+	left: 0.5em;
 	display: inline-block;
-	position: relative;
-	width: 2em;
-	height: 2em;
+	position: absolute;
+	width: 1.5em;
+	height: 1.5em;
+	border: 0px solid #ebc645;
 
+}
+
+.input {
+	width: 97%;
+	display: block;
+	position: absolute;
+	top: 3em;
+	text-align: center;
+	background-color: #ebc645;
+	border: 0px solid #ebc645;
 }
 
 /*Styling for generated hexagon inside generator div*/
