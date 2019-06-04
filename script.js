@@ -1,8 +1,6 @@
-/*document.getElementById("newCombBtn").addEventListener("click", function() {
-	var hex = document.createElement("div");
-	hex.classList.add("hexagon");
-	document.getElementById("generatorField").appendChild(hex);
-});*/
+
+// JavaScript for generating new combs with nested elements
+
 
 document.getElementById("newCombBtn").addEventListener("click", function() {
 
