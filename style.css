@@ -150,7 +150,7 @@ textarea {
 
 #generatorOptions {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	width: 17%;
 	height: 100%;
 
@@ -169,6 +169,7 @@ textarea {
 	font-size: 1.6em;
 	margin-top: .5em;
 	display: inline-block;
+	margin-left: .5em; 
 	top: -5em;
 	left: -7em;
 	width: 30px;
@@ -366,7 +367,7 @@ button:hover {
 	
 }
 
-#deletebtn {
+.deletebtn {
 	border-radius: 50%;
 	left: 0.5em;
 	display: inline-block;
@@ -500,7 +501,7 @@ button:hover {
 	
 }
 
-#listField #deletebtn {
+#listField .deletebtn {
 	border-radius: 50%;
 	display: inline-block;
 	position: absolute;

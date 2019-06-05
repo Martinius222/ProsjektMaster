@@ -41,11 +41,26 @@ window.onclick = function(event) {
 }
 
 
+//Delete button functionality
+
+var removeHex = document.getElementsByClassName("hexagon");
+var delbtn = document.getElementsByClassName("deletebtn");
+
+for (var i = 0; i < delbtn.length; i++) {
+  	delbtn[i].onclick = function() {
+  		for(var n = 0; n < removeHex.length; n++) {
+  			if (delbtn[i] == removeHex[n]) {
+  				removeHex.remove();
+  			}
+  		}
+    }
+}
+
+
 
 // JavaScript for generating new combs with nested elements
 
-
-document.getElementById("newCombBtn").addEventListener("click", function() {
+function generateNewComb(backgroundColor) {
 
 	var hex = document.createElement("div");
 	hex.className = "hexagon";
@@ -56,7 +71,7 @@ document.getElementById("newCombBtn").addEventListener("click", function() {
 
 	var del = document.createElement("button");
 	del.innerHTML = "&#10799";
-	del.id = "deletebtn";
+	del.className = "deletebtn";
 
 	var inp = document.createElement("input");
 	inp.className = "input";
@@ -71,19 +86,28 @@ document.getElementById("newCombBtn").addEventListener("click", function() {
 	hex.appendChild(inp);
 	hex.appendChild(com);
 	document.getElementById("generatorField").appendChild(hex);
+
 	var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
-var btns = document.getElementsByClassName("comment");
+	// Get the button that opens the modal
+	var btns = document.getElementsByClassName("comment");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
-for (var i = 0; i < btns.length; i++) {
-  btns[i].onclick = function() {
-    modal.style.display = "block";
-  }
+	// When the user clicks the button, open the modal 
+	for (var i = 0; i < btns.length; i++) {
+  		btns[i].onclick = function() {
+    		modal.style.display = "block";
+  		}
+	}
+
 }
 
+
+document.getElementById("newCombBtn").addEventListener("click", function() {
+
+	generateNewComb();
+
 });
+
