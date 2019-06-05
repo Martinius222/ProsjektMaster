@@ -7,6 +7,7 @@
 	
 </head>
 <body>
+
 <script type="text/javascript" src="dragula.js"></script>
 
 	<nav>
@@ -20,30 +21,36 @@
 			<div class="usericon">EM</div>
 
 		</div>
-		
-
-
-
 	</nav>
+
 	<div id="sidebar">
 		
 		<div id="options"></div>
 		<div id="listField"></div>
 		<div id="generator">
+
 			<div id="generatorOptions">
 				<button id="newCombBtn">&#43</button>
 			</div>
-			<div id="generatorField">
-				
-			</div>
-			
-			
-			
-		</div>
 
+			<div id="generatorField"></div>
+		</div>
 	</div>
 
+
 	<div id="workspace">
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+  		<!-- Modal content -->
+  			<div class="modal-content">
+    			<span class="close">&times;</span>
+    			<form>
+    				<textarea placeholder="Some sample text here"></textarea>
+    			</form>
+  			</div>
+		</div> 
+		<!--End Of Modal-->
 
 		<div class="rows" id="row1">
 
@@ -67,8 +74,8 @@
 				<div class="hexagon">
 					<button id="likebtn">&#x2665</button>
 					<button id="deletebtn">&#10799</button>
-					<input class="input" placeholder="Title">
-					<button id="comment">&#x2261</button>
+					<input class="input" placeholder="New Great Idea">
+					<button class="comment">&#x2261</button>
 				</div>
 			</div>
 			<div id="2x5" class="cont"></div>

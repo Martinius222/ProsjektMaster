@@ -1,11 +1,16 @@
 
+hmtl {
+	font-family: monospace;
+}
+
+
 body {
 	margin: 0;
 	background-color: rgb(17, 17, 17);
 }
 
 nav {
-	font-family: arial;
+	font-family: monospace;
 	display: flex;
 	align-items: center;
 	width: 100%;
@@ -21,6 +26,62 @@ img {
     margin: 0.5em;
 
 }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 11; /* Sit on top */
+  left: 30%;
+  top: 20%;
+  width: 30%; /* Full width */
+  height: 50%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  border-radius: 8px;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 60%;
+}
+
+textarea {
+	height: 17em;
+	width: 90%;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	background-color: #f8f8f8;
+	font-size: 16px;
+	resize: none;
+
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
 
 #navbaropt {
 	width: 30%;
@@ -318,6 +379,7 @@ button:hover {
 }
 
 .input {
+	font-family: monospace;
 	color: #969696;
 	width: 97%;
 	display: block;
@@ -329,7 +391,7 @@ button:hover {
 
 }
 
-#comment {
+.comment {
 	border-radius: 50%;
 	left: 4.23em;
 	top: 6em;
@@ -461,7 +523,7 @@ button:hover {
 
 }
 
-#listField #comment {
+#listField .comment {
 	border-radius: 50%;
 	display: inline-block;
 	position: absolute;
