@@ -71,4 +71,19 @@ document.getElementById("newCombBtn").addEventListener("click", function() {
 	hex.appendChild(inp);
 	hex.appendChild(com);
 	document.getElementById("generatorField").appendChild(hex);
+	var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btns = document.getElementsByClassName("comment");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+for (var i = 0; i < btns.length; i++) {
+  btns[i].onclick = function() {
+    modal.style.display = "block";
+  }
+}
+
 });
