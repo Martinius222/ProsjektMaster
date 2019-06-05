@@ -515,3 +515,18 @@ button:hover {
   background: grey; 
   border-radius: 10px;
 }
+
+
+
+
+@media screen and (max-width: 1680px) {
+	cont {
+		width: 9.7%;
+	}
+}
+
+@media screen and (max-width: 1920px) {
+	cont {
+		width: 8.5%;
+	}
+}
