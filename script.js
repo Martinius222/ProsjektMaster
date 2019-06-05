@@ -1,4 +1,16 @@
 
+
+// Variable for use with status toggle
+var statusElement = document.getElementById("visibilityopt");
+
+statusElement.onclick = function () {
+    if (statusElement.innerText !== "Public") {
+        statusElement.innerText = "Public";
+    } else {
+        statusElement.innerText = "Private";
+    }
+};
+
 // JavaScript for generating new combs with nested elements
 
 
