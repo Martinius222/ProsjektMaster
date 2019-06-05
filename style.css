@@ -519,14 +519,33 @@ button:hover {
 
 
 
+@media screen and (max-width: 1920px) {
+	.cont {
+		width: 8.5%;
+	}
+}
+
 @media screen and (max-width: 1680px) {
-	cont {
+	.cont {
 		width: 9.7%;
 	}
 }
 
-@media screen and (max-width: 1920px) {
-	cont {
-		width: 8.5%;
+@media screen and (max-width: 1600px) {
+	.cont {
+		width: 10.2%;
+	}
+	
+}
+
+@media screen and (max-width: 1500px) {
+	.cont {
+		width: 10.8%;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.cont {
+		width: 11.3%;
 	}
 }
