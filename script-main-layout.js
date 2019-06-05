@@ -17,6 +17,7 @@ var todoElement = document.getElementById("todo-container");
 var doingElement = document.getElementById("doing-container");
 var doneElement = document.getElementById("done-container");
 var kanbanContainerElements = document.getElementsByClassName("kanban-container");
+var tableElement = document.getElementById("table");
 
 // (Temporary?) Workaround to get the if check working
 combareaElement.style.width = "80%";
@@ -33,6 +34,7 @@ sizeElement.onclick = function () {
             kanbanContainerElements[i].style.margin = "2em 1em";
         }
 
+        tableElement.style.display = "none";
         todoElement.style.width = "33.3%";
         doingElement.style.display = "inline-block";
         doneElement.style.display = "inline-block";
@@ -46,6 +48,7 @@ sizeElement.onclick = function () {
             kanbanContainerElements[i].style.margin = "0.3em auto";
         }
 
+        tableElement.style.display = "flex";
         todoElement.style.width = "80%";
         doingElement.style.display = "none";
         doneElement.style.display = "none";
