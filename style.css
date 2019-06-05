@@ -242,6 +242,12 @@ left: 4.3em;
 
 }
 
+button:hover {
+	background-color: #845c00;
+	transition: background-color 0.2s ease-in-out;
+
+}
+
 #likebtn {
 	border-radius: 50%;
 	left: 8em;
