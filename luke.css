@@ -12,8 +12,14 @@ body{
   line-height:1.6;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
 #Combs{
-  background-image: url('../img/Honey.jpg');
+  background-image: url('Honey.jpg');
   background-size:cover;
   background-position: center;
   height:100vh;
@@ -59,4 +65,28 @@ body{
   padding:10px;
   background:#f4f4f4;
   text-align:center;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
 }
