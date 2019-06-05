@@ -114,6 +114,16 @@ textarea {
 
 /* Styling of the sidebar and its elements  */
 
+h3 {
+	font-family: monospace;
+	margin: 0.1em 1em;
+	padding: 0;
+}
+
+span {
+	color: #845c00;
+}
+
 #sidebar { /* The sidebar itself */
 	float: right;
 	width: 17%;
@@ -128,9 +138,9 @@ textarea {
 #options {  /* Top options bar in the sidebar */
 	display: block;
 	width: 95%;
-	height: 4em; 
+	height: 3em; 
 	border-radius: 8px;
-	margin: 1em auto 0 auto; 
+	margin: 0.2em auto; 
 	background-color: #1f1f1f; 
 
 }
@@ -138,9 +148,9 @@ textarea {
 #listField {  /* To Do list where combs can stack */
 	display: block;
 	width: 95%;
-	height: 30em;
+	height: 29em;
 	border-radius: 8px;
-	margin: 1em auto 0 auto; 
+	margin: 0.2em auto;  
 	background-color: #1f1f1f; 
 	overflow: auto;
 }
@@ -151,7 +161,7 @@ textarea {
 	width: 95%;
 	height: 12em;
 	border-radius: 8px;
-	margin: 1em auto 0 auto; 
+	margin: 0.2em auto; 
 	background-color: #1f1f1f;
 	z-index: 9; 
 }
