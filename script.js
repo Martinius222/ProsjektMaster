@@ -4,10 +4,10 @@
 var statusElement = document.getElementById("visibilityopt");
 
 statusElement.onclick = function () {
-    if (statusElement.innerText !== "Public") {
-        statusElement.innerText = "Public";
+    if (statusElement.innerText !== "PUBLIC") {
+        statusElement.innerText = "PUBLIC";
     } else {
-        statusElement.innerText = "Private";
+        statusElement.innerText = "PRIVATE";
     }
 };
 
