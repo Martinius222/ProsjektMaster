@@ -41,21 +41,6 @@ window.onclick = function(event) {
 }
 
 
-//Delete button functionality
-
-var removeHex = document.getElementsByClassName("hexagon");
-var delbtn = document.getElementsByClassName("deletebtn");
-
-for (var i = 0; i < delbtn.length; i++) {
-  	delbtn[i].onclick = function() {
-  		for(var n = 0; n < removeHex.length; n++) {
-  			if (delbtn[i] == removeHex[n]) {
-  				removeHex.remove();
-  			}
-  		}
-    }
-}
-
 
 
 // JavaScript for generating new combs with nested elements
