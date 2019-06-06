@@ -461,7 +461,7 @@ function dragula (initialContainers, options) {
       return;
     }
     var rect = _item.getBoundingClientRect();
-    _mirror = _item.cloneNode(false);
+    _mirror = _item.cloneNode(false); //  THE BUG FROM HELL - Olav
     _mirror.style.width = getRectWidth(rect) + 'px';
     _mirror.style.height = getRectHeight(rect) + 'px';
     classes.rm(_mirror, 'gu-transit');

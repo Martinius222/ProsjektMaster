@@ -3,6 +3,7 @@ html,
 body {
     margin: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 /* Small scalable logo */
@@ -27,6 +28,60 @@ img {
 /* Indicate that this is clickable */
 .clickable {
     cursor: pointer;
+}
+
+.row {
+    margin: 0;
+    margin-top: -0.7vmin;
+    height: 7vmin;
+}
+
+.row-odd {
+    margin-left: 1vmin;
+}
+
+.row-pair {
+    margin-left: 0.9vmin;
+}
+
+.hexagon-wrapper {
+    width: 7vmin;
+    height: 7vmin;
+    transform: rotate(90deg);
+
+    text-align: center;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.hexagon {
+    height: 100%;
+    width: calc(100% * 0.57735);
+    display: inline-block;
+    background-color: black;
+}
+
+.hexagon:before {
+    position: absolute;
+    top: 0;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    background-color: inherit;
+    height: inherit;
+    width: inherit;
+    content: '';
+    transform: rotateZ(60deg);
+}
+
+.hexagon:after {
+    position: absolute;
+    top: 0;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    background-color: inherit;
+    height: inherit;
+    width: inherit;
+    content: '';
+    transform: rotateZ(-60deg);
 }
 
 .kanban-container {
@@ -67,6 +122,16 @@ img {
 #combarea {
     float: left;
     background-color: rgb(255, 153, 0);
+}
+
+#table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vmin;
+    width: 80vmin;
+    margin: auto;
 }
 
 #sidebar {
