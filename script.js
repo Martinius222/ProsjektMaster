@@ -81,10 +81,15 @@ function generateNewComb(backgroundColor) {
 	com.innerHTML = "&#x2261";
 	com.className = "comment";
 
+	var usr = document.createElement("button");
+	usr.innerHTML = "+";
+	usr.className = "adduser";
+
 	hex.appendChild(like);
 	hex.appendChild(del);
 	hex.appendChild(inp);
 	hex.appendChild(com);
+	hex.appendChild(usr);
 	document.getElementById("generatorField").appendChild(hex);
 
 	var modal = document.getElementById('myModal');
