@@ -149,6 +149,7 @@ span {
 	background-color: #383737;
 	border-radius: 8px;
 	border-bottom: 3px solid #1f1f1f;
+	transition: width 0.3 ease-in-out;
 	
 }
 
@@ -157,12 +158,19 @@ span {
 
 }
 
-#expandbtn {
-	display: inline-block;
+#size {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: right;
+	margin-right: 2em;
 	font-family: monospace;
+	width: 1em;
+	height: 1em;
 	background-color: lightgrey;
 	border-radius: 50%;
 	padding: .2em;
+
 	margin-left: 2em;
 	cursor: pointer;
 
@@ -506,6 +514,78 @@ button:hover {
 
 }
 
+#kanban-container2 > .hexagon {
+
+  position: relative;
+  width: 95%; 
+  height: 5em;
+  background-color: #383737;
+  margin: 0.5em auto;
+  border-radius: 8px;
+  border: 2px solid #845c00;
+  cursor: grab;
+  z-index: 10;
+  transition: opacity 0.2s ease-in-out;
+  
+  
+}
+
+#kanban-container2 > .hexagon:before,
+#kanban-container2 > .hexagon:after {
+  display: hidden;
+  cursor: grab;
+  z-index: 10;
+}
+
+#kanban-container2 > .hexagon:before {
+  display: hidden;
+  cursor: grab;
+  z-index: 10;
+}
+
+#kanban-container2 > .hexagon:after {
+  display: hidden;
+  cursor: grab;
+  z-index: 10;
+
+}
+
+#kanban-container3 > .hexagon {
+
+  position: relative;
+  width: 95%; 
+  height: 5em;
+  background-color: #383737;
+  margin: 0.5em auto;
+  border-radius: 8px;
+  border: 2px solid #845c00;
+  cursor: grab;
+  z-index: 10;
+  transition: opacity 0.2s ease-in-out;
+  
+  
+}
+
+#kanban-container3 > .hexagon:before,
+#kanban-container3 > .hexagon:after {
+  display: hidden;
+  cursor: grab;
+  z-index: 10;
+}
+
+#kanban-container3 > .hexagon:before {
+  display: hidden;
+  cursor: grab;
+  z-index: 10;
+}
+
+#kanban-container3 > .hexagon:after {
+  display: hidden;
+  cursor: grab;
+  z-index: 10;
+
+}
+
 /*Properties for the buttons inside TO DO field*/
 
 #listField #likebtn {
@@ -558,7 +638,7 @@ button:hover {
 
 #listField .adduser {
 	border-radius: 50%;
-	left: 14em;
+	left: 12em;
 	display: inline-block;
 	position: absolute;
 	margin-top: 0.5em;
@@ -568,6 +648,133 @@ button:hover {
 	border: 0px solid #ebc645;
 	cursor: pointer;
 }
+
+
+/**/
+
+#kanban-container2 #likebtn {
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	margin-top: 0.5em;
+	width: 1.5em;
+	height: 1.5em;
+	border: 0px solid #ebc645;
+	cursor: pointer;
+	
+}
+
+#kanban-container2 .deletebtn {
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	margin-top: 0.5em;
+	width: 1.5em;
+	height: 1.5em;
+	border: 0px solid #ebc645;
+	cursor: pointer;
+
+}
+#kanban-container2 .input {
+	color: #969696;
+	width: 97%;
+	display: block;
+	position: absolute;
+	top: 3em;
+	text-align: center;
+	background-color: #3b3a3a;
+	border: 0px solid #3b3a3a;
+
+}
+
+#kanban-container2 .comment {
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	margin-top: 0.5em;
+	top: 0em;
+	width: 1.5em;
+	height: 1.5em;
+	border: 0px solid #ebc645;
+	z-index: 11;
+	cursor: pointer;
+}
+
+#kanban-container2 .adduser {
+	border-radius: 50%;
+	left: 12em;
+	display: inline-block;
+	position: absolute;
+	margin-top: 0.5em;
+	width: 1.5em;
+	height: 1.5em;
+	z-index: 11;
+	border: 0px solid #ebc645;
+	cursor: pointer;
+}
+
+#kanban-container3 #likebtn {
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	margin-top: 0.5em;
+	width: 1.5em;
+	height: 1.5em;
+	border: 0px solid #ebc645;
+	cursor: pointer;
+	
+}
+
+#kanban-container3 .deletebtn {
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	margin-top: 0.5em;
+	width: 1.5em;
+	height: 1.5em;
+	border: 0px solid #ebc645;
+	cursor: pointer;
+
+}
+#kanban-container3 .input {
+	color: #969696;
+	width: 97%;
+	display: block;
+	position: absolute;
+	top: 3em;
+	text-align: center;
+	background-color: #3b3a3a;
+	border: 0px solid #3b3a3a;
+
+}
+
+#kanban-container3 .comment {
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	margin-top: 0.5em;
+	top: 0em;
+	width: 1.5em;
+	height: 1.5em;
+	border: 0px solid #ebc645;
+	z-index: 11;
+	cursor: pointer;
+}
+
+#kanban-container3 .adduser {
+	border-radius: 50%;
+	left: 12em;
+	display: inline-block;
+	position: absolute;
+	margin-top: 0.5em;
+	width: 1.5em;
+	height: 1.5em;
+	z-index: 11;
+	border: 0px solid #ebc645;
+	cursor: pointer;
+}
+
+/**/
 
 /* Styling of all scrollbars */
 

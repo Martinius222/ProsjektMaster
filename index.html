@@ -3,6 +3,7 @@
 <head>
 	<title>IdeaComb</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="kanban.css">
 	<link rel="stylesheet" type="text/css" href="dragula.css">
 	
 </head>
@@ -26,7 +27,7 @@
 	</nav>
 
 	<div id="sidebar">  <!--The sidebar and its elements -->
-		<h3>ACTIVE <span>USERS</span></h3>
+		<h3 id="active-users-text">ACTIVE <span>USERS</span></h3>
 		<div id="options">
 			<div class="usericon">LG</div>
 			<div class="usericon">BØ</div>
@@ -34,17 +35,11 @@
 			<div class="usericon">OT</div>
 			<div class="usericon">EM</div>
 		</div>
-		<h3 id="ideas">IDEAS TO <span>DO</span></h3><div id="expandbtn"><</div>
-		<div id="listField">
-			<div class="hexagon"> <!--Test comb -->
-					<button id="likebtn" alt="Like This Idea">&#x2665</button>
-					<button class="deletebtn">&#10799</button>
-					<input class="input" placeholder="New Great Idea">
-					<button class="comment">&#x2261</button>
-					<button class="adduser">+</button>
-				</div>
-		</div>
-		<h3>NEW <span>COMB</span></h3>
+		<h3 id="ideas">IDEAS TO <span>DO</span></h3><div id="size"><</div>
+		<div id="listField"></div>
+		<div class="kanban-container" id="kanban-container2"></div>
+		<div class="kanban-container" id="kanban-container3"></div>
+		<h3 id="new-comb-text">NEW <span>COMB</span></h3>
 		<div id="generator">
 
 			<div id="generatorOptions">
@@ -90,14 +85,7 @@
 			<div id="2x1" class="cont"></div>
 			<div id="2x2" class="cont"></div>
 			<div id="2x3" class="cont"></div>
-			<div id="2x4" class="cont">
-				<div class="hexagon"> <!--Test comb -->
-					<button id="likebtn" alt="Like This Idea">&#x2665</button>
-					<button class="deletebtn">&#10799</button>
-					<input class="input" placeholder="New Great Idea">
-					<button class="comment">&#x2261</button>
-				</div>
-			</div>
+			<div id="2x4" class="cont"></div>
 			<div id="2x5" class="cont"></div>
 			<div id="2x6" class="cont"></div>
 			<div id="2x7" class="cont"></div>
@@ -158,13 +146,14 @@
 		</div>
 
 	</div>
-		
+
+<script type="text/javascript" src="kanban.js"></script>		
 <script type="text/javascript" src="script.js"></script>  <!--The script for various functionality -->
 
 
 <!--Calls to the Dragula library, each slot is set to receive elements includin the to do list and generator field -->
 <script> 
-dragula([document.getElementById("listField"), document.getElementById("generatorField"), document.getElementById("1x1"), document.getElementById("1x2"), document.getElementById("1x3"), document.getElementById("1x4"), document.getElementById("1x5"),document.getElementById("1x6"), document.getElementById("1x7"), document.getElementById("1x8"), document.getElementById("2x1"), document.getElementById("2x2"), document.getElementById("2x3"), document.getElementById("2x4"), document.getElementById("2x5"), document.getElementById("2x6"), document.getElementById("2x7"), document.getElementById("2x8"), document.getElementById("3x1"), document.getElementById("3x2"), document.getElementById("3x3"), document.getElementById("3x4"), document.getElementById("3x5"), document.getElementById("3x6"), document.getElementById("3x7"), document.getElementById("3x8"), document.getElementById("4x1"), document.getElementById("4x2"), document.getElementById("4x3"), document.getElementById("4x4"), document.getElementById("4x5"), document.getElementById("4x6"), document.getElementById("4x7"), document.getElementById("4x8"), document.getElementById("5x1"), document.getElementById("5x2"), document.getElementById("5x3"), document.getElementById("5x4"), document.getElementById("5x5"), document.getElementById("5x6"), document.getElementById("5x7"), document.getElementById("5x8"), document.getElementById("6x1"), document.getElementById("6x2"), document.getElementById("6x3"), document.getElementById("6x4"), document.getElementById("6x5"), document.getElementById("6x6"), document.getElementById("6x7"), document.getElementById("6x8")],  {
+dragula([document.getElementById("listField"), document.getElementById("kanban-container2"), document.getElementById("kanban-container3"), document.getElementById("generatorField"), document.getElementById("1x1"), document.getElementById("1x2"), document.getElementById("1x3"), document.getElementById("1x4"), document.getElementById("1x5"),document.getElementById("1x6"), document.getElementById("1x7"), document.getElementById("1x8"), document.getElementById("2x1"), document.getElementById("2x2"), document.getElementById("2x3"), document.getElementById("2x4"), document.getElementById("2x5"), document.getElementById("2x6"), document.getElementById("2x7"), document.getElementById("2x8"), document.getElementById("3x1"), document.getElementById("3x2"), document.getElementById("3x3"), document.getElementById("3x4"), document.getElementById("3x5"), document.getElementById("3x6"), document.getElementById("3x7"), document.getElementById("3x8"), document.getElementById("4x1"), document.getElementById("4x2"), document.getElementById("4x3"), document.getElementById("4x4"), document.getElementById("4x5"), document.getElementById("4x6"), document.getElementById("4x7"), document.getElementById("4x8"), document.getElementById("5x1"), document.getElementById("5x2"), document.getElementById("5x3"), document.getElementById("5x4"), document.getElementById("5x5"), document.getElementById("5x6"), document.getElementById("5x7"), document.getElementById("5x8"), document.getElementById("6x1"), document.getElementById("6x2"), document.getElementById("6x3"), document.getElementById("6x4"), document.getElementById("6x5"), document.getElementById("6x6"), document.getElementById("6x7"), document.getElementById("6x8")],  {
 revertOnSpill: true
 })
 </script>

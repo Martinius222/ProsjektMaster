@@ -25,7 +25,7 @@ size.addEventListener("click", function() {
 		listField.style.width = "30%";
 		listField.style.margin = "0.5em 0.5em";
 		listField.style.borderRadius = "1em";
-		size.style.top = "0%";
+		//size.style.top = "0%";
 
 		for(var i = 0; i < kanbanContainers.length; i++){
 			kanbanContainers[i].style.display = "inline-block";
@@ -36,7 +36,8 @@ size.addEventListener("click", function() {
 		options.style.display = "none";
 		newCombText.style.display = "none";
 		generator.style.display = "none";
-		//workspace.style.display = "none";
+		
+
 	}
 	else {
 		sidebar.style.width = "17%";
@@ -45,7 +46,7 @@ size.addEventListener("click", function() {
 		listField.style.height = "29em";
 		listField.style.margin = "0.2em auto";
 		listField.style.borderRadius = "8px";
-		size.style.top = "96.2%";
+		
 
 		for(var i = 0; i < kanbanContainers.length; i++){
 			kanbanContainers[i].style.display = "none";
@@ -53,7 +54,7 @@ size.addEventListener("click", function() {
 
 		ideas.style.display = "initial";
 		activeUsersText.style.display = "initial";
-		options.style.display = "block";
+		options.style.display = "flex";
 		newCombText.style.display = "initial";
 		generator.style.display = "flex";
 		workspace.style.display = "inline-block";
