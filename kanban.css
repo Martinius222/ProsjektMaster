@@ -1,0 +1,29 @@
+/* Kanban elements */
+.clickable {
+	cursor: pointer;
+}
+
+.outer-kanban-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.kanban-container {
+	margin: 0.5em 0.5em;
+	display: none;
+	height: 95%;
+	width: 30%;
+	border-radius: 1em;
+	background-color: #1f1f1f;
+	overflow: auto;
+	text-align: center;
+}
+
+#size {
+    position: relative;
+	  text-align: center;
+    top: 96.2%;
+    width: 100%;
+    color: black;
+    background-color: #845c00;
+}
