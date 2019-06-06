@@ -36,6 +36,7 @@ size.addEventListener("click", function() {
 		options.style.display = "none";
 		newCombText.style.display = "none";
 		generator.style.display = "none";
+		workspace.style.display = "none";
 		
 
 	}

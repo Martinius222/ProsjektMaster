@@ -41,8 +41,6 @@ window.onclick = function(event) {
 }
 
 
-
-
 // JavaScript for generating new combs with nested elements
 
 function generateNewComb(backgroundColor) {
