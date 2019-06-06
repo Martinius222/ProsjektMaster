@@ -1,0 +1,294 @@
+$ git log
+commit f9cba7023653ee2d667f4b691a2732e8b06e99a8 (HEAD -> master, origin/master,origin/HEAD)
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Thu Jun 6 20:17:15 2019 +0200
+
+    Final changes
+
+commit b7d4d2e8ca3e93308b91148419c606964733396c
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Thu Jun 6 20:03:37 2019 +0200
+
+    Add intro page and new filenames
+
+commit 81cb07cb940a3ad67283a147534efb319d4964ec
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Thu Jun 6 19:24:35 2019 +0200
+
+    change filename
+
+commit 71c0df75e31d960d487590b1514fc399b79c6532
+Author: Tony André Furuhaug Kolstad <phat_fail@hotmail.com>
+Date:   Thu Jun 6 19:16:03 2019 +0200
+
+:...skipping...
+commit f9cba7023653ee2d667f4b691a2732e8b06e99a8 (HEAD -> master, origin/master, origin/HEAD)
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Thu Jun 6 20:17:15 2019 +0200
+
+    Final changes
+
+commit b7d4d2e8ca3e93308b91148419c606964733396c
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Thu Jun 6 20:03:37 2019 +0200
+
+    Add intro page and new filenames
+
+commit 81cb07cb940a3ad67283a147534efb319d4964ec
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Thu Jun 6 19:24:35 2019 +0200
+
+    change filename
+
+commit 71c0df75e31d960d487590b1514fc399b79c6532
+Author: Tony André Furuhaug Kolstad <phat_fail@hotmail.com>
+Date:   Thu Jun 6 19:16:03 2019 +0200
+
+    Modified landing page
+
+commit 1af7975b23b405838353085b178726fda84bf7ba
+Merge: 78ca072 315b6c7
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Thu Jun 6 18:52:57 2019 +0200
+
+    Merge commit
+
+commit 78ca0720fc32f9af70cac701bcff99c876872d8f
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Thu Jun 6 18:52:03 2019 +0200
+
+    Integrated expandable sidebar with kanban elements
+
+commit 315b6c76aeb2fe0a1a4cfe556b244ebe4491bc4b
+Merge: 0a8c8c9 4bec9ae
+Author: Lukas Gidius <lukasgidius@Lukass-MacBook-Pro.local>
+Date:   Thu Jun 6 18:30:38 2019 +0200
+
+    Merge?
+
+commit 0a8c8c91ea687bf93c7ac98ae0c9a1542e360a48
+Author: Lukas Gidius <lukasgidius@Lukass-MacBook-Pro.local>
+Date:   Thu Jun 6 18:27:26 2019 +0200
+
+    Fix landing page
+
+commit 7ae27b75b08c35ee84c37e4190a29d2d1d376a53
+Merge: 0c020ba bd0c348
+Author: Lukas Gidius <lukasgidius@Lukass-MacBook-Pro.local>
+Date:   Thu Jun 6 18:26:07 2019 +0200
+
+    Fix landing page
+
+commit 4bec9aefd99600237c296359d65877cd68251d0f
+Merge: f710516 3d11f6d
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Thu Jun 6 16:43:44 2019 +0200
+
+    double commit add user btn
+
+commit f7105162c551fce636272b26a66fc3f18dc4c1f8
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Thu Jun 6 16:35:38 2019 +0200
+
+    Add adduser button and expand button
+
+commit 3d11f6d60c2cc05a4607dd02023834ed426d6943
+Author: Tony André Furuhaug Kolstad <phat_fail@hotmail.com>
+Date:   Thu Jun 6 16:32:06 2019 +0200
+
+    Rework kanban
+
+commit 2437b3bfeef5725758f59f13033b243d6b92c6fb
+Author: Tony André Furuhaug Kolstad <phat_fail@hotmail.com>
+Date:   Thu Jun 6 14:49:25 2019 +0200
+
+    Fix linking
+
+commit 3da640de1ddb55c38fc8fdd014dcfbabc7034ffb
+Author: Tony André Furuhaug Kolstad <phat_fail@hotmail.com>
+Date:   Thu Jun 6 14:13:09 2019 +0200
+
+    Add kanban functionality and style
+
+commit c77d39f270e8558e16436d05cb7f60256b363df4
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Thu Jun 6 01:58:12 2019 +0200
+
+    add minor details to UI
+
+commit 09d3bdeb7310243fa9f10320fc50222fcfcfe170
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Thu Jun 6 01:14:00 2019 +0200
+
+    Add details to sidebar
+
+commit 5b6932fad6ecdb90c5ec8695b91bff43b8e09c96
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Thu Jun 6 00:25:44 2019 +0200
+
+    Add further media queries
+
+commit bd0c348a867fd6c46c527bf993c3fc82f1121e1f
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Wed Jun 5 23:44:07 2019 +0200
+
+    Add media queries
+
+commit edef468087e31e6dd108f4e2944dd31c9921e445
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Wed Jun 5 23:22:36 2019 +0200
+
+    Add descriptive comments to the code
+
+commit 4228725d4eb035601d26c033659414003560bb8d
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Wed Jun 5 23:01:24 2019 +0200
+
+    Minor bug fixes
+
+commit 95c8d5d1447bf9bb6032fe650cbaf7d56a867353
+Author: phat_fail <phat_fail@hotmail.com>
+Date:   Wed Jun 5 19:49:19 2019 +0200
+
+    Rework of hexagons, now scalable
+
+commit 24317200c05d9ae7d3bd72bd07d054a3086c8c5b
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Wed Jun 5 19:16:08 2019 +0200
+
+    Fix clickEvent not appending when generating new comb
+
+commit 153b8aebee6a93ed2adf35ddd7958c415173fb24
+Merge: 220516e 87836b5
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Wed Jun 5 19:00:39 2019 +0200
+
+    Merge branch 'master' of https://github.com/Martinius222/ProsjektMaster
+
+commit 220516e80892e8c6b1cde6f4a0d5d0ae78759b76
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Wed Jun 5 19:00:03 2019 +0200
+
+    Add semifunctional comment popup field
+
+commit 87836b57f58469f9d9dae9c1b510dfc7a8ef14c7
+Author: Olav Martinius Tomter <36863674+Martinius222@users.noreply.github.com>
+Date:   Wed Jun 5 18:14:33 2019 +0200
+
+    Update Clipboard Olav
+
+commit 9d5e94ab84bd2e80535d78f795f46b292da3e02e
+Author: Olav Martinius Tomter <36863674+Martinius222@users.noreply.github.com>
+Date:   Wed Jun 5 18:03:48 2019 +0200
+
+    Create Clipboard Olav
+
+commit 85d393ef8f42061df6d7d4d12d1e9da1b75a7a36
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Wed Jun 5 16:28:06 2019 +0200
+
+    Integrate nav bar elements from Tony
+
+commit 8ed038a79353ef884fab0153d3e7aa5fa32e80be
+Merge: 3ddcd4f 072090e
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Wed Jun 5 15:30:36 2019 +0200
+
+    Merge branch 'master' of https://github.com/Martinius222/ProsjektMaster
+
+commit 3ddcd4fe651a3ef16d944a3f1b0ed5c5eace9a2d
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Wed Jun 5 15:30:12 2019 +0200
+
+    Add hover effects to comb buttons
+
+commit 072090e9ca351446dae7570196b6545dc32107e0
+Author: phat_fail <phat_fail@hotmail.com>
+Date:   Wed Jun 5 10:45:28 2019 +0200
+
+    Delete unneccessary folder
+
+commit 0c020ba7f50307159d31d7db67ce69cc10d0cb8c
+Author: Lukas Gidius <lukasgidius@Lukass-MacBook-Pro.local>
+Date:   Tue Jun 4 19:48:07 2019 +0200
+
+    Move files out of folder
+
+commit 1602ec0b485674f93adb013d69fd5e90c4773b02
+Author: lukemanne <42611490+lukemanne@users.noreply.github.com>
+Date:   Tue Jun 4 19:10:57 2019 +0200
+
+    landing
+
+commit 739e90341fa47ca207952aa376893bf4b89cc570
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Tue Jun 4 15:15:54 2019 +0200
+
+    Add ems to combs
+
+commit 8c3b53c30debbedb2ca7f1c6f7ee36ff9fee7346
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Tue Jun 4 00:51:38 2019 +0200
+
+    Add working to do list and comb export function
+
+commit 1ec3ae639499fac251c28cffde056401cf6b333c
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Mon Jun 3 23:38:43 2019 +0200
+
+    Add background, comment button and new colors
+
+commit 52522e671258c2ad2a20b6c422c3c2dc28b17edf
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Mon Jun 3 19:37:17 2019 +0200
+
+    Fix bug from hell and add comb generator with child elements
+
+commit 3ef41128f1279337e02792cfb634ede0da8851d4
+Author: Martinius B. Tomter <martinius.tomter@me.com>
+Date:   Mon Jun 3 16:14:42 2019 +0200
+
+    Adapt combs to smaller screen
+
+commit 713b8a46a5ddf901c6d984c95a3baffdc206de00
+Author: ericmarhaug <ericmarhaug@hotmail.com>
+Date:   Mon Jun 3 14:25:44 2019 +0200
+
+    Add Logo
+
+commit 172573d37d1b006fef985e316d7d882d0368910a
+Author: lukemanne <42611490+lukemanne@users.noreply.github.com>
+Date:   Mon Jun 3 14:20:00 2019 +0200
+
+    Add files via upload
+
+commit d185567e79219c9205a7eddaa704ac00dcd58186
+Author: phat_fail <phat_fail@hotmail.com>
+Date:   Sat Jun 1 13:25:23 2019 +0200
+
+    Rewrite whole layout CSS file, add some functionality for KanBan elements in layout JS file, add structure to layout HTML file
+
+commit b3bd3589eefb9dacf4b86bab38ac01158b534ee4
+Author: Martinius <martinius.tomter@me.com>
+Date:   Thu May 30 21:37:36 2019 +0200
+
+    Add working comb generator
+
+commit 92b2f280cb155ffda4bf37813556435245d6b5a0
+Author: Martinius <martinius.tomter@me.com>
+Date:   Thu May 30 01:01:27 2019 +0200
+
+    integrate comb with navbar and side bar proto
+
+commit b6243f94a4e3942f286162fc337aedb94dc3f202
+Author: Martinius <martinius.tomter@me.com>
+Date:   Wed May 29 17:04:27 2019 +0200
+
+    add libraries and comb system
+
+commit a828ca2a1635a22363f356245f5775c4eebe5fe8
+Author: Martinius <martinius.tomter@me.com>
+Date:   Wed May 29 17:02:19 2019 +0200
+
+    first commit
+(END)
