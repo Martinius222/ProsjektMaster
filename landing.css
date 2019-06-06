@@ -8,21 +8,28 @@ body{
   font-family: Arial, "Helvetica Neue",cursive,cursive,
   Helvetica, sans-serif;
   font-size:17px;
-  color:#923213;
+  color:#333;
   line-height:1.6;
 }
 
-nav {
+nav{
   display: flex;
   justify-content: center;
-  background-color: #333;
+  background-color: #373838;
+}
+
+#Beee{
+  background-color:#333;
+  position: absolute;
+  bottom: 500px;
+  right: 705px;
 }
 
 #Combs{
-  background-image: url('Honey.jpg');
+  background: #333;
   background-size:cover;
   background-position: center;
-  height:100vh;
+  height:90vh;
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -33,31 +40,43 @@ nav {
 
 #Combs h1{
   font-size:50px;
-  line-height:1.2;
+  color: #f4f4f4;
 }
 
-#Combs p{
+#Combs h2{
   font-size:20px;
+  color: #f4f4f4;
 }
+
+#Combs h3{
+  font-size: 20px;
+  color: #f4f4f4;
+}
+
+#Combs h4{
+  font-size: 17px;
+  color: #f4f4f4;
+}
+
 #Combs .button{
   font-size:18px;
   text-decoration:none;
-  color:#923213;
-  border:#923213 1px solid;
-  padding:10px 20px;
+  color:#f4f4f4;
+  border:#f4f4f4 1px solid;
+  padding:5px 10px;
   border-radius:10px;
   margin-top:20px;
 }
 
 #Combs .button:hover{
-  background:#923213;
-  color:#fff;
+  background:#504F4E;
+  color:#f4f4f4;
 }
 
 #section-a{
   padding:10px;
-  background:#923213;
-  color:#fff;
+  background:#383737;
+  color:#f4f4f4;
   text-align:center;
 }
 
@@ -67,12 +86,16 @@ nav {
   text-align:center;
 }
 
+span{
+  color: #F5B01B;
+}
+
 ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #383737;
 }
 
 li {
@@ -88,5 +111,5 @@ li a{
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #504F4E;
 }
